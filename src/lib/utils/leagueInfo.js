@@ -6,9 +6,9 @@ export const dynasty = false; // true for dynasty leagues, false for redraft and
 export const enableBlog = false; // requires VITE_CONTENTFUL_ACCESS_TOKEN and VITE_CONTENTFUL_SPACE environment variables
 
 /*   STEP 2   */
-// export const homepageText = 
-//  <p>Ace, please we need a fACE.</p>
-
+export const homepageText = `
+  <p>Ace, please... we need a fACE.</p>
+`;
 /*   STEP 3   */
 /*
 3 managers as an example. Uncomment (remove the //) before each line to make it live code
