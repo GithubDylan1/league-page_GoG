@@ -7,7 +7,72 @@ export const enableBlog = true; // requires VITE_CONTENTFUL_ACCESS_TOKEN and VIT
 
 /*   STEP 2   */
 export const homepageText = `
-  <p>Ace, please... we need a fACE.</p>
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content {
+    width: 100%;
+    padding: 20px;
+    overflow: auto;
+    height: auto;
+  }
+
+  .iframes-container {
+    display: flex;
+    width: 100%;
+  }
+
+  .iframe {
+    width: 50%;
+    height: 500px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .second-iframe {
+    width: 50%;
+    height: 500px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    align: right
+  }
+
+  @media (max-width: 768px) {
+    .iframes-container {
+      flex-direction: column; /* Stack iframes on mobile */
+    }
+
+    .iframe, .second-iframe {
+      width: 100%;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="content">
+    <p>this is a welcoming space, even for people who have never won the league. Which isn't me, DJ your reigning champ. Winning feels pretty great, but I'm sure most of you know the feeling. Anyways, here's some fun stuff like check out the Records page to see just how bad I've beaten some of you. Or take a peak at the Blogs for a good look at fACE's from the past. Also, let's get this Coaches Poll filled out, see who we think wins. It's right next to the ODDS TO WIN IT ALL and who's that near the TOP??? call me a Dawg because I'm about to repeat.</p>
+  </div>
+  
+  <div class="iframes-container">
+    <iframe class="iframe"https://docs.google.com/spreadsheets/d/e/2PACX-1vSlGxWSbe-KPMGMU1s1IMu9hU0kOV0w8m5VXb9KzED2-joVip-GMMbIJ_o2hYxeU4GG9wlOVn6BzqjB/pubhtml?gid=973296563&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+    <iframe class="second-iframe" src="https://docs.google.com/forms/d/e/1FAIpQLScP0q7I_u_V40EF0J8dwukWn4Z6uFRZBvkmVjjiSABGkhMyag/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0" align="center">Loading…</iframe>
+  </div>
+</div>
+
+</body>
+</html>
+
+  
 `;
 /*   STEP 3   */
 /*
